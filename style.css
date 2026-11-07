@@ -1,0 +1,38 @@
+/* Définition de votre charte graphique */
+:root {
+    --primary-color: #14a0b9;    /* Bleu azur principal */
+    --secondary-color: #1a8cab;  /* Bleu secondaire */
+    --dark-color: #0f172a;       /* Texte / fond sombre */
+    --light-bg: #f8fafc;         /* Fond de page clair */
+    --font-main: 'Barlow Semi Condensed', sans-serif;
+}
+
+body {
+    background-color: var(--light-bg);
+    color: var(--dark-color);
+    font-family: var(--font-main), sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: var(--dark-color);
+    color: white;
+    padding: 2rem 1rem;
+    text-align: center;
+}
+
+.btn-primary {
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    transition: background 0.3s;
+}
+
+.btn-primary:hover {
+    background-color: var(--secondary-color);
+}
