@@ -1,24 +1,31 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="fr" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Concours VideoDiMath - Édition 2026-2027</title>
-    <!-- Tailwind CSS pour un design moderne -->
+    <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@300;400;600;700&display=swap" rel="stylesheet">
+    <style>
+        body {
+            font-family: 'Barlow Semi Condensed', sans-serif;
+        }
+    </style>
 </head>
-<body class="bg-slate-50 text-slate-800 font-sans antialiased">
+<body class="bg-slate-50 text-slate-800 antialiased">
 
-    <!-- En-tête / Header -->
-    <header class="bg-indigo-900 text-white shadow-md">
-        <div class="max-w-7xl mx-auto px-4 py-6 flex flex-col md:flex-row justify-between items-center">
+    <!-- En-tête / Header Vert-Bleu -->
+    <header class="bg-[#0e2a35] text-white shadow-lg border-b-4 border-[#0e9488] sticky top-0 z-50">
+        <div class="max-w-7xl mx-auto px-4 py-5 flex flex-col md:flex-row justify-between items-center">
             <div>
                 <h1 class="text-3xl font-extrabold tracking-tight">VideoDiMath</h1>
-                <p class="text-indigo-200 mt-1">Concours de vidéos autour des mathématiques et de la physique</p>
+                <p class="text-teal-200 text-sm mt-0.5">Concours de vidéos autour des mathématiques et de la physique — CNRS / AuDiMATH</p>
             </div>
             <div class="mt-4 md:mt-0 flex gap-3">
-                <a href="#inscription" class="bg-amber-500 hover:bg-amber-600 text-slate-900 font-semibold px-5 py-2.5 rounded-lg shadow transition">S'inscrire</a>
-                <a href="#modalites" class="bg-indigo-800 hover:bg-indigo-700 text-white px-5 py-2.5 rounded-lg transition">En savoir plus</a>
+                <a href="#inscription" class="bg-[#0e9488] hover:bg-[#115e59] text-white font-semibold px-5 py-2 rounded-lg shadow transition">S'inscrire</a>
+                <a href="#reglement" class="bg-[#134e4a] hover:bg-[#0f3d3a] text-white px-5 py-2 rounded-lg transition">Règlement & Infos</a>
             </div>
         </div>
     </header>
@@ -26,39 +33,43 @@
     <!-- Contenu Principal -->
     <main class="max-w-7xl mx-auto px-4 py-10 space-y-12">
 
-        <!-- Section Présentation -->
+        <!-- Section Présentation / Accueil -->
         <section class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
-            <h2 class="text-2xl font-bold text-indigo-900 mb-4">Le Concours</h2>
-            <p class="text-slate-600 leading-relaxed mb-4">
-                Proposé par AuDiMATH avec le label action éducative du ministère de l'Éducation nationale, VideoDiMath s'adresse aux collèges et lycées. L'objectif : se poser une question de mathématiques (ou de physique en lien avec les maths), la résoudre et l'exposer en 3 minutes maximum avec dynamisme.
-            </p>
+            <div class="max-w-3xl">
+                <span class="inline-block bg-teal-100 text-[#0e9488] text-xs font-bold px-3 py-1 rounded-full uppercase tracking-wider mb-4">Édition 2026-2027</span>
+                <h2 class="text-3xl font-bold text-[#0e2a35] mb-4">Mettez les mathématiques en scène !</h2>
+                <p class="text-slate-600 leading-relaxed text-lg mb-6">
+                    Proposé par AuDiMATH avec le label action éducative du ministère de l'Éducation nationale, VideoDiMath s'adresse aux élèves de collège et de lycée. L'objectif : se poser une question de mathématiques (ou de physique en lien avec les maths), la résoudre et l'exposer en 3 minutes maximum avec dynamisme et créativité.
+                </p>
+            </div>
+
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6 mt-6">
-                <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100">
-                    <h3 class="font-bold text-indigo-900 mb-2">🎬 Format court</h3>
-                    <p class="text-sm text-slate-600">3 minutes maximum (générique non inclus), tourné en français.</p>
+                <div class="bg-teal-50/50 p-6 rounded-xl border border-teal-100">
+                    <h3 class="font-bold text-[#0e9488] text-lg mb-2">🎬 Format court</h3>
+                    <p class="text-sm text-slate-600">3 minutes maximum (générique non inclus), tourné en français, réalisé par les élèves.</p>
                 </div>
-                <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100">
-                    <h3 class="font-bold text-indigo-900 mb-2">🏆 Deux catégories</h3>
-                    <p class="text-sm text-slate-600">Choisissez entre la catégorie <strong>Mathématiques</strong> et la catégorie <strong>Santé</strong>.</p>
+                <div class="bg-teal-50/50 p-6 rounded-xl border border-teal-100">
+                    <h3 class="font-bold text-[#0e9488] text-lg mb-2">🏆 Deux catégories</h3>
+                    <p class="text-sm text-slate-600">Participez au choix dans la catégorie <strong>Mathématiques</strong> ou dans la catégorie <strong>Santé</strong>.</p>
                 </div>
-                <div class="bg-indigo-50 p-5 rounded-xl border border-indigo-100">
-                    <h3 class="font-bold text-indigo-900 mb-2">🔬 Objectif pédagogique</h3>
-                    <p class="text-sm text-slate-600">Développer la démarche scientifique, l'esprit critique et l'attrait pour les sciences.</p>
+                <div class="bg-teal-50/50 p-6 rounded-xl border border-teal-100">
+                    <h3 class="font-bold text-[#0e9488] text-lg mb-2">🔬 Esprit critique</h3>
+                    <p class="text-sm text-slate-600">Développer la démarche scientifique et l'attrait pour les sciences de manière ludique.</p>
                 </div>
             </div>
         </section>
 
         <!-- Section Calendrier -->
         <section class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
-            <h2 class="text-2xl font-bold text-indigo-900 mb-6">Calendrier 2026-2027</h2>
+            <h2 class="text-2xl font-bold text-[#0e2a35] mb-6">Calendrier du Concours</h2>
             <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
-                <div class="border-l-4 border-amber-500 pl-4 py-2">
-                    <span class="text-xs font-bold text-amber-600 uppercase tracking-wider">Étape 1</span>
+                <div class="border-l-4 border-[#0e9488] pl-4 py-2">
+                    <span class="text-xs font-bold text-[#0e9488] uppercase tracking-wider">Étape 1</span>
                     <h4 class="font-bold text-slate-800 text-lg">18 décembre 2026</h4>
                     <p class="text-sm text-slate-600">Date limite d'inscription (midi)</p>
                 </div>
-                <div class="border-l-4 border-indigo-500 pl-4 py-2">
-                    <span class="text-xs font-bold text-indigo-600 uppercase tracking-wider">Étape 2</span>
+                <div class="border-l-4 border-slate-400 pl-4 py-2">
+                    <span class="text-xs font-bold text-slate-500 uppercase tracking-wider">Étape 2</span>
                     <h4 class="font-bold text-slate-800 text-lg">19 mars 2027</h4>
                     <p class="text-sm text-slate-600">Date limite de soumission des vidéos</p>
                 </div>
@@ -70,49 +81,79 @@
             </div>
         </section>
 
-        <!-- Section Formulaire Moderne -->
+        <!-- Section Règlement et Documents Utiles -->
+        <section id="reglement" class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100 space-y-6">
+            <h2 class="text-2xl font-bold text-[#0e2a35]">Règlement détaillé & Documents</h2>
+            <p class="text-slate-600 leading-relaxed">
+                Le concours est ouvert aux classes de collège et de lycée. Chaque production doit respecter des critères stricts de propriété intellectuelle et de droit à l'image.
+            </p>
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <h3 class="font-bold text-[#0e2a35] text-lg">📜 Points clés du règlement</h3>
+                    <ul class="text-sm text-slate-600 space-y-2 list-disc list-inside">
+                        <li>Durée maximale de 3 minutes (générique compris).</li>
+                        <li>Utilisation exclusive de musiques et d'extraits <strong>libres de droits</strong>.</li>
+                        <li>Validation obligatoire du contenu scientifique par l'enseignant encadrant.</li>
+                    </ul>
+                </div>
+                <div class="bg-slate-50 p-6 rounded-xl border border-slate-200 space-y-3">
+                    <h3 class="font-bold text-[#0e2a35] text-lg">📁 Documents et Autorisations</h3>
+                    <p class="text-sm text-slate-600">
+                        Pensez à recueillir les autorisations de droit à l'image (mineurs/majeurs) pour tous les participants apparaissant à l'écran.
+                    </p>
+                    <div class="pt-2">
+                        <span class="inline-block text-xs bg-teal-100 text-[#0e9488] font-semibold px-3 py-1.5 rounded-lg">
+                            Dossiers administratifs disponibles auprès de l'équipe organisatrice.
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Section Formulaire d'Inscription -->
         <section id="inscription" class="bg-white rounded-2xl shadow-sm p-8 border border-slate-100">
-            <h2 class="text-2xl font-bold text-indigo-900 mb-2">Formulaire d'inscription</h2>
-            <p class="text-slate-600 mb-6 text-sm">Remplissez ce formulaire simplifié pour inscrire votre classe.</p>
+            <h2 class="text-2xl font-bold text-[#0e2a35] mb-2">Formulaire d'inscription</h2>
+            <p class="text-slate-600 mb-6 text-sm">Remplissez ce formulaire pour inscrire votre classe. Les données seront transmises directement à l'adresse <strong>cdelong@orange.fr</strong>.</p>
             
-            <form action="#" method="POST" class="space-y-4 max-w-2xl">
+            <!-- Formulaire relié à Formspree (Pointez sur votre code Formspree ou l'adresse directe) -->
+            <form action="https://formspree.io/f/cdelong@orange.fr" method="POST" class="space-y-4 max-w-2xl">
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-medium text-slate-700 mb-1">Établissement</label>
-                        <input type="text" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <input type="text" name="etablissement" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-[#0e9488] outline-none">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-slate-700 mb-1">Code postal & Ville</label>
-                        <input type="text" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <input type="text" name="ville" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-[#0e9488] outline-none">
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-medium text-slate-700 mb-1">Nom de l'enseignant</label>
-                        <input type="text" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <input type="text" name="enseignant" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-[#0e9488] outline-none">
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-slate-700 mb-1">Adresse électronique</label>
-                        <input type="email" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <input type="email" name="email" required class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-[#0e9488] outline-none">
                     </div>
                 </div>
                 <div class="grid grid-cols-1 md:grid-cols-2 gap-4">
                     <div>
                         <label class="block text-sm font-medium text-slate-700 mb-1">Concours</label>
-                        <select class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <select name="concours" class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-[#0e9488] outline-none">
                             <option>Mathématiques</option>
                             <option>Santé</option>
                         </select>
                     </div>
                     <div>
                         <label class="block text-sm font-medium text-slate-700 mb-1">Niveau de classe</label>
-                        <select class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-indigo-500 outline-none">
+                        <select name="niveau" class="w-full rounded-lg border-slate-300 border px-3 py-2 focus:ring-2 focus:ring-[#0e9488] outline-none">
                             <option>Collège</option>
                             <option>Lycée</option>
                         </select>
                     </div>
                 </div>
-                <button type="submit" class="w-full bg-indigo-900 hover:bg-indigo-800 text-white font-semibold py-3 rounded-lg transition shadow-md mt-4">
+                <button type="submit" class="w-full bg-[#0e9488] hover:bg-[#115e59] text-white font-semibold py-3 rounded-lg transition shadow-md mt-4">
                     Envoyer l'inscription
                 </button>
             </form>
@@ -121,7 +162,7 @@
     </main>
 
     <!-- Pied de page -->
-    <footer class="bg-slate-900 text-slate-400 py-8 mt-16 text-center text-sm">
+    <footer class="bg-[#0e2a35] text-slate-400 py-8 mt-16 text-center text-sm">
         <p>Projet VideoDiMath — CNRS / AuDiMATH. Refonte moderne propulsée par GitHub Pages.</p>
     </footer>
 
